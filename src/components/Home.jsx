@@ -36,7 +36,7 @@ const Home = () => {
     <div>
        {data.map((item,index) =>(
         <li key={index}>{item}
-        <button onClick={() => handleDelete(index)} style={{color:"red", background:"black"}}> X </button>
+        <button onClick={() => handleDelete(index)} style={{color:"red", background:"paleywllow"}}> X </button>
         </li>
         
        ))}
