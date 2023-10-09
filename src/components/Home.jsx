@@ -18,6 +18,11 @@ const Home = () => {
         console.log(data);
     }
   }
+  const handleDelete = (index) => {
+    const updatedData = [...data];
+    updatedData.splice(index, 1);
+    setData(updatedData);
+  };
   return <div>
     <input type="text"
     value={text}
@@ -30,8 +35,12 @@ const Home = () => {
     }
     <div>
        {data.map((item,index) =>(
-        <li key={index}>{item}</li>
+        <li key={index}>{item}
+        <button onClick={() => handleDelete(index)} style={{color:"red", background:"black"}}> X </button>
+        </li>
+        
        ))}
+      
     </div>
   </div>;
 };
