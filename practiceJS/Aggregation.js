@@ -16,3 +16,26 @@ const aggregatedData = data.reduce((result, current) => {
   }, {});
   
   console.log(Object.values(aggregatedData));
+
+  const MongoClient = require('mongodb').MongoClient;
+
+MongoClient.connect('mongodb://localhost:27017', (err, client) => {
+  if (err) throw err;
+  
+  const db = client.db('mydb');
+  const collection = db.collection('mycollection');
+
+  collection.aggregate([
+    {
+      $group: {
+        _id: '$name',
+        totalScore: { $sum: '$score' },
+        count: { $sum: 1 }
+      }
+    }
+  ]).toArray((err, results) => {
+    if (err) throw err;
+    console.log(results);
+    client.close();
+  });
+});
