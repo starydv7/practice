@@ -4,7 +4,6 @@ const data=[
     {name:"Manisha",Titile:"Yadav"},
     {name:"Jasveen",Titile:"Yadav"},
     {name:"Neha",Titile:"Yadav"},
-
 ]
 const aggregatedData = data.reduce((result, current) => {
     if (!result[current.name]) {
