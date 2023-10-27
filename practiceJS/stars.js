@@ -10,3 +10,5 @@ function upperLeftStarPattern(rows) {
   const rows = 5;
   upperLeftStarPattern(rows);
   
+  //counter
+  
