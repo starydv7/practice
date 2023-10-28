@@ -9,3 +9,11 @@ function examples(){
     }
     console.log(count);
 }
+//this will not work outside the if statement
+function examples(){
+    if(true){
+        let count=10;
+        console.log(count);
+    }
+    console.log(count);
+}
