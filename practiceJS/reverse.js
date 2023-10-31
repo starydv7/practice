@@ -19,3 +19,4 @@ function rev(str){
 }
 var res=rev(str);
 console.log(res);
+//longest word in string
