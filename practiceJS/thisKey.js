@@ -51,3 +51,6 @@ const arr = [5, 7, 9, 11, 15, 17];
 const missingOdd = findMissingOddNumbers(arr);
 console.log("Missing odd number(s):", missingOdd);
 
+//max of the array;
+
+
