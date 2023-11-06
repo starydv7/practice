@@ -48,3 +48,7 @@ console.log(filterFun);
 const words = ["Hello", " ", "world", "!"];
 const concatenated = words.reduce((accumulator, currentValue) => accumulator + currentValue, "");
 console.log(concatenated); // Output: "Hello world!"
+
+
+// const maxArr=result.sort();
+console.log("max",result.length-1);
