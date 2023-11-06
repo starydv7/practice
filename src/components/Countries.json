@@ -1,0 +1,53 @@
+[
+    {
+      "code": "IND",
+      "name": "India",
+      "cities": ["Mumbai", "Delhi"]
+    },
+    {
+      "code": "USA",
+      "name": "United States",
+      "cities": ["New York", "Los Angeles"]
+    },
+    {
+      "code": "CHN",
+      "name": "China",
+      "cities": ["Beijing", "Shanghai"]
+    },
+    {
+      "code": "BRA",
+      "name": "Brazil",
+      "cities": ["Sao Paulo", "Rio de Janeiro"]
+    },
+    {
+      "code": "RUS",
+      "name": "Russia",
+      "cities": ["Moscow", "St. Petersburg"]
+    },
+    {
+      "code": "CAN",
+      "name": "Canada",
+      "cities": ["Toronto", "Vancouver"]
+    },
+    {
+      "code": "FRA",
+      "name": "France",
+      "cities": ["Paris", "Marseille"]
+    },
+    {
+      "code": "GER",
+      "name": "Germany",
+      "cities": ["Berlin", "Munich"]
+    },
+    {
+      "code": "AUS",
+      "name": "Australia",
+      "cities": ["Sydney", "Melbourne"]
+    },
+    {
+      "code": "JPN",
+      "name": "Japan",
+      "cities": ["Tokyo", "Osaka"]
+    }
+  ]
+  
