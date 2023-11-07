@@ -52,3 +52,31 @@ console.log(concatenated); // Output: "Hello world!"
 
 // const maxArr=result.sort();
 console.log("max",result.length-1);
+function findMedian(arr1, arr2) {
+  // Merge the two arrays
+  const mergedArray = arr1.concat(arr2);
+
+  // Sort the merged array
+  mergedArray.sort((a, b) => a - b);
+
+  const length = mergedArray.length;
+
+  // Check if the merged array has an even length
+  if (length % 2 === 0) {
+    // If the length is even, the median is the average of the two middle elements
+    const middle1 = mergedArray[length / 2 - 1];
+    const middle2 = mergedArray[length / 2];
+    return (middle1 + middle2) / 2;
+  } else {
+    // If the length is odd, the median is the middle element
+    return mergedArray[Math.floor(length / 2)];
+  }
+}
+
+// Example usage
+const array1 = [1, 3, 5];
+const array2 = [2, 4, 6];
+const median = findMedian(array1, array2);
+
+console.log("Merged array:", array1.concat(array2));
+console.log("Median:", median);
