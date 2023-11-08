@@ -80,3 +80,5 @@ const median = findMedian(array1, array2);
 
 console.log("Merged array:", array1.concat(array2));
 console.log("Median:", median);
+console.log("Median:", median);
+console.log("Pawan")
