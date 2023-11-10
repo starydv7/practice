@@ -16,6 +16,9 @@ console.log(result)
 // console.log("forEach",forEachRes);
 
 // const numbers = [1, 2, 3, 4, 5];
+
+
+console.log("marig")
 let sum = 0;
 result.forEach((number) => {
   sum += number;
