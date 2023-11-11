@@ -40,7 +40,7 @@ console.log("map",mapRes);
 const wordsMap = ["hello", "world"];
 const uppercaseWords = wordsMap.map((word) => word.toUpperCase());
 console.log(uppercaseWords); // Output: ["HELLO", "WORLD"]
-
+console.log("Pawan Yadav")
 
 const reduceFun=result.reduce((acc,curr)=>acc+curr,0);
 console.log(reduceFun);
