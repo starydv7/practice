@@ -63,7 +63,18 @@ function findMedian(arr1, arr2) {
   mergedArray.sort((a, b) => a - b);
 
   const length = mergedArray.length;
-
+/**
+ * @param {number[]} arr
+ * @return {number}
+ */
+var maximumElementAfterDecrementingAndRearranging = function (arr) {
+  arr.sort((a, b) => a - b);
+  let max = 1;
+  for (let i = 1; i < arr.length; i++) {
+    max += arr[i] > max;
+  }
+  return max;
+};
   // Check if the merged array has an even length
   if (length % 2 === 0) {
     // If the length is even, the median is the average of the two middle elements
